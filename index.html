@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="app-title-container">
+            <h1 class="app-title">Word Counter App</h1>
+            <section class="counter-holders-container">
+                <div class="word-count-container">
+                    <p>Characters: <span class="counter chars">0</span></p>
+                </div>
+                <div class="word-count-container">
+                    <p>Words: <span class="counter words">0</span></p>
+                </div>
+                <div class="word-count-container">
+                    <p>Spaces: <span class="counter spaces">0</span></p>
+                </div>
+                <div class="word-count-container">
+                    <p>Sentences: <span class="counter sentences">0</span></p>
+                </div>
+            </section>
+        </header>
+        <main class="text-area-container">
+            <textarea class="text-area" name="text" id="text" placeholder="Write some text..."></textarea>
+        </main>
+        <footer class="copyright-container">
+            <p>Copyright <span class="copy">&#169;</span> <span class="date"></span> Word Counter App. All rights
+                reserved.</p>
+        </footer>
+
+    </div>
+
+    <script type="module" src="./dist/text-area.js"></script>
+</body>
+
+</html>

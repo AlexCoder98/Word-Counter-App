@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+:root {
+    --mainBgc: rgb(255, 252, 244);
+    --mainTextColor: #404040;
+    --borderColor: #404040;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+input,
+textarea,
+button {
+    font-family: 'Inter', sans-serif;
+}
+
+html,
+textarea {
+    background-color: var(--mainBgc);
+}
+
+/* HEADER START */
+
+#wrapper .app-title-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--borderColor);
+    color: var(--mainTextColor);
+}
+
+#wrapper .app-title-container .app-title {
+    width: 30%;
+    font-size: 34px;
+}
+
+#wrapper .app-title-container .counter-holders-container {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+#wrapper .app-title-container .counter-holders-container p {
+    font-size: 20px;
+}
+
+#wrapper .counter {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 1280px) {
+    #wrapper .app-title-container .app-title {
+        font-size: 32px;
+    }
+
+    #wrapper .app-title-container .counter-holders-container p {
+        font-size: 19px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    #wrapper .app-title-container .app-title {
+        width: 35%;
+        font-size: 30px;
+    }
+
+    #wrapper .app-title-container .counter-holders-container p {
+        font-size: 19px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    #wrapper .app-title-container {
+        flex-direction: column;
+    }
+
+    #wrapper .app-title-container .app-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    #wrapper .app-title-container .counter-holders-container {
+        margin: 30px 0 10px;
+        width: 100%;
+    }
+
+    #wrapper .app-title-container .counter-holders-container p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 415px) {
+    #wrapper .app-title-container .app-title {
+        width: 100%;
+        text-align: center;
+        font-size: 29px;
+    }
+
+    #wrapper .app-title-container .counter-holders-container {
+        margin: 20px 0 10px;
+        width: 100%;
+    }
+
+    #wrapper .app-title-container .counter-holders-container p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 376px) {
+    #wrapper .app-title-container .counter-holders-container p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 281px) {
+    #wrapper .app-title-container .app-title {
+        font-size: 24px;
+    }
+
+    #wrapper .app-title-container .counter-holders-container {
+        margin: 20px 0 10px;
+        width: 100%;
+    }
+
+    #wrapper .app-title-container .counter-holders-container {
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #wrapper .app-title-container .counter-holders-container>* {
+        width: 50%;
+        padding: 1% 0;
+        text-align: center;
+    }
+}
+
+/* HEADER END */
+
+/* MAIN START */
+
+#wrapper .text-area-container {
+    width: 100%;
+    padding: 35px 10px;
+}
+
+#wrapper .text-area-container .text-area {
+    width: 100%;
+    min-height: 70vh;
+    vertical-align: middle;
+    color: var(--mainTextColor);
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+
+@media (max-width: 800px) {
+    #wrapper .text-area-container {
+        padding: 25px 10px;
+    }
+
+    #wrapper .text-area-container .text-area {
+        min-height: 75vh;
+        color: var(--mainTextColor);
+        font-size: 17px;
+        outline: none;
+        border: none;
+    }
+}
+
+@media (max-width: 281px) {
+    #wrapper .text-area-container .text-area {
+        min-height: 65vh;
+    }
+}
+
+/* MAIN END */
+
+/* FOOTER START */
+
+#wrapper .copyright-container {
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgb(121, 112, 89);
+}
+
+#wrapper .copyright-container p {
+    font-size: 12px;
+    color: #f2f2f2;
+}
+
+@media(max-width: 281px) {
+    #wrapper .copyright-container {
+        padding: 10px 0;
+    }
+
+    #wrapper .copyright-container p {
+        font-size: 9px;
+    }
+}
+
+/* FOOTER END */
